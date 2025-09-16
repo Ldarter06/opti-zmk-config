@@ -1,8 +1,8 @@
 file_format: "1"
 id: optimag
-name: Optimag
+name: OPTIMAG
 type: shield
-url: https://keeb.io/products/bfo-9000-keyboard-customizable-full-size-split-ortholinear
+url: https://github.com/Ldarter06/opti-zmk-config
 requires: [pro_micro]
 features:
   - keys

@@ -5,7 +5,6 @@
  */
 
 #include <dt-bindings/zmk/matrix-transform.h>
-#include "optimag-layouts.dtsi"
 
 / {
     chosen {
@@ -33,9 +32,4 @@
         wakeup-source;
         diode-direction = "col2row";
     };
-};
-
-&physical_layout0 {
-    kscan = <&kscan0>; // Label of the kscan node this layout uses
-    transform = <&default_transform>; // Label of the matrix transform this layout uses
 };
