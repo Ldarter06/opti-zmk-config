@@ -1,6 +1,6 @@
 file_format: "1"
 id: optimag
-name: OPTIMAG
+name: Optimag
 type: shield
 url: https://github.com/Ldarter06/opti-zmk-config
 requires: [pro_micro]
