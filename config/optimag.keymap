@@ -22,32 +22,32 @@
             tapping-term-ms = <200>;
             bindings = <&kp F1>, <&bt BT_CLR>;
         };
-        td1: tap_dance {
+        td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F2>, <&bt BT_SEL 0>;
         };
-        td2: tap_dance {
+        td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F3>, <&bt BT_SEL 1>;
         };
-        td3: tap_dance {
+        td3: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F4>, <&bt BT_CLR>;
         };
-        td4: tap_dance {
+        td4: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F5>, <&studio_unlock>;
         };
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -66,24 +66,6 @@
             &kp PG_UP &kp CAPS     &kp LCTRL &kp A     &kp S    &kp D     &kp F     &kp G     &kp H     &kp G      &kp H     &kp J     &kp K     &kp L    &kp SEMI  &kp APOS  &kp ENTER &kp ENTER
             &kp PG_DN &kp UP       &kp LSHFT &kp Z     &kp X    &kp C     &kp V     &kp B     &kp N     &kp B      &kp N     &kp M     &kp COMMA &kp DOT  &kp SLASH &kp RSHFT &kp UP    &mo LOWER
             &kp LEFT  &kp DOWN     &kp RIGHT &kp LCTRL &kp LALT &kp LMETA &kp SPACE &kp SPACE &kp ENTER &kp BSPC   &kp SPACE &kp SPACE &kp RMETA &kp RALT &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT
-            >;
-        };
-
-        lower_layer {
-            display-name = "Lower Layer";
-            // | | | | | | | | | | | | | | | | | | |
-            // | | | | | | | | | | | | | | | | | | |
-            // | | | | | | | | | | | | | | | | | | |
-            // | | | | | | | | | | | | | | | | | | |
-            // | | | | | | | | | | | | | | | | | | |
-            // | | | | | | | | | | | | | | | | | | |
-            bindings = <
-            &bt BT_CLR       &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_CLR       &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7
-            &out OUT_USB     &out OUT_BLE      &trans          &trans          &trans          &trans          &trans       &trans       &trans       &out OUT_USB     &out OUT_BLE      &trans          &trans          &trans          &trans          &trans       &trans       &trans
-            &ext_power EP_ON &ext_power EP_OFF &trans          &trans          &trans          &trans          &trans       &trans       &trans       &ext_power EP_ON &ext_power EP_OFF &trans          &trans          &trans          &trans          &trans       &trans       &trans
-            &sys_reset           &bootloader       &trans          &trans          &trans          &trans          &trans       &trans       &trans       &sys_reset           &bootloader       &trans          &trans          &trans          &trans          &trans       &trans       &trans
-            &rgb_ug RGB_TOG  &rgb_ug RGB_HUI   &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &rgb_ug RGB_EFF &trans       &trans       &trans       &rgb_ug RGB_TOG  &rgb_ug RGB_HUI   &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &rgb_ug RGB_EFF &trans       &trans       &trans
-            &trans           &rgb_ug RGB_HUD   &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &rgb_ug RGB_EFR &trans       &trans       &trans       &trans           &rgb_ug RGB_HUD   &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &rgb_ug RGB_EFR &trans       &trans       &trans
             >;
         };
     };

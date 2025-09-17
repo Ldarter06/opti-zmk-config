@@ -22,25 +22,25 @@
             tapping-term-ms = <200>;
             bindings = <&kp F1>, <&bt BT_CLR>;
         };
-        td1: tap_dance {
+        td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F2>, <&bt BT_SEL 0>;
         };
-        td2: tap_dance {
+        td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F3>, <&bt BT_SEL 1>;
         };
-        td3: tap_dance {
+        td3: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F4>, <&bt BT_CLR>;
         };
-        td4: tap_dance {
+        td4: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
